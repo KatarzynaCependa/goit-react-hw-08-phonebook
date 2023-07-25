@@ -7,6 +7,13 @@ import { useEffect } from 'react';
 import { fetchContacts } from 'redux/operations';
 import { selectError, selectIsLoading } from 'redux/selectors';
 
+// import { Routes, Route } from 'react-router-dom';
+// import { lazy } from 'react';
+
+// const HomePage = lazy(() => import('../pages/Home/Home'));
+// const RegisterPage = lazy(() => import('../pages/Register/Register'));
+// const LoginPage = lazy(() => import('../pages/Login/Login'));
+
 export const App = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
