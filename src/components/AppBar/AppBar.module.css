@@ -1,0 +1,11 @@
+.header {
+  background-color: #ebf7e3;
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 25px 30px 0;
+}
+
+.navWrapper {
+  display: flex;
+  gap: 30px;
+}
