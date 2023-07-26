@@ -38,6 +38,13 @@ export const RegisterForm = () => {
         <button type="submit" className={css.button}>
           Sign up
         </button>
+        <p>
+          Do you have an account? Log in
+          <a href="/login" className={css.link}>
+            {' '}
+            here
+          </a>
+        </p>
       </form>
     </div>
   );

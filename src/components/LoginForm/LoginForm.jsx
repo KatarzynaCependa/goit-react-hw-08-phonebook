@@ -30,6 +30,13 @@ export const LoginForm = () => {
         <button type="submit" className={css.button}>
           Log in
         </button>
+        <p>
+          Don't have an account? Sign up
+          <a href="/register" className={css.link}>
+            {' '}
+            here
+          </a>
+        </p>
       </form>
     </div>
   );

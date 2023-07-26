@@ -88,3 +88,13 @@
   transition: 0s;
   transform: translate(0, 5%);
 }
+
+.link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #375f1b;
+}
+
+.link:hover {
+  color: #66b032;
+}
