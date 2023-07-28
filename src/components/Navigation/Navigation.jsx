@@ -7,12 +7,10 @@ export const Navigation = () => {
 
   return (
     <nav>
-      <NavLink className={css.navEl} to="/goit-react-hw-08-phonebook">
+      <NavLink className={css.navEl} to="/">
         Home
       </NavLink>
-      {isLoggedIn && (
-        <NavLink to="/goit-react-hw-08-phonebook/contacts">Contacts</NavLink>
-      )}
+      {isLoggedIn && <NavLink to="/contacts">Contacts</NavLink>}
     </nav>
   );
 };
