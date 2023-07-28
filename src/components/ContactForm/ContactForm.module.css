@@ -13,3 +13,30 @@
   flex-direction: column;
   gap: 10px;
 }
+
+.button {
+  width: 80px;
+  height: 25px;
+  font-size: 12px;
+  border: none;
+  color: #98e462;
+  cursor: pointer;
+  padding: 5px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1b3409;
+  border-radius: 10px;
+}
+
+.inputEl {
+  padding: 10px 40px 10px 15px;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.inputEl:focus {
+  border: 3px solid #618685;
+}

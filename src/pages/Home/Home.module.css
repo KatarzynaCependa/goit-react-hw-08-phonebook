@@ -1,0 +1,29 @@
+.headerWrapper {
+  max-width: fit-content;
+  margin: 200px auto;
+}
+
+.header {
+  font-size: 60px;
+  color: #375f1b;
+  text-align: center;
+}
+
+.waviy {
+  position: relative;
+  margin-top: 15px;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 100px;
+  color: #375f1b;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}

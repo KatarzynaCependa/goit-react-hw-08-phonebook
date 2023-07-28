@@ -13,7 +13,12 @@ export const Filter = () => {
   return (
     <label className={css.filterLabel}>
       Find your contacts by name
-      <input type="text" placeholder="Search" onChange={handleFilter} />
+      <input
+        type="text"
+        placeholder="Search"
+        onChange={handleFilter}
+        className={css.inputEl}
+      />
     </label>
   );
 };
