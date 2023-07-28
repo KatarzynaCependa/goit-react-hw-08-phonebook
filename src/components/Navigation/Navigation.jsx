@@ -6,8 +6,8 @@ export const Navigation = () => {
   const { isLoggedIn } = useAuth();
 
   return (
-    <nav>
-      <NavLink className={css.navEl} to="/">
+    <nav className={css.navEl}>
+      <NavLink className={css.navLink} to="/">
         Home
       </NavLink>
       {isLoggedIn && <NavLink to="/contacts">Contacts</NavLink>}

@@ -1,12 +1,9 @@
 .header {
-  /* background-color: #ebf7e3; */
   background-image: linear-gradient(to bottom right, #eaffdb, #ebf6e5, #c1e2ab);
-  display: flex;
-  justify-content: flex-end;
-  padding: 20px 55px 20px 0;
 }
 
 .navWrapper {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
+  padding: 15px 0px;
 }
