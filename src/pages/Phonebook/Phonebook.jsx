@@ -1,6 +1,7 @@
 import { React, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import css from './Phonebook.module.css';
 
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Filter } from 'components/Filter/Filter';
@@ -16,14 +17,14 @@ const Phonebook = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className={css.wrapper}>
       <HelmetProvider>
         <Helmet>
           <title>Phonebook</title>
         </Helmet>
       </HelmetProvider>
       <ContactForm />
-      <h2>Phonebook</h2>
+      <h2 className={css.header}>Phonebook</h2>
       <Filter />
       {isLoading ? <p>Loading contacts...</p> : <ContactList />}
     </div>

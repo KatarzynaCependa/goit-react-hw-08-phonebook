@@ -36,12 +36,12 @@ export const LoginForm = () => {
             className={css.inputEl}
           />
         </label>
-        <button type="submit" className={css.button}>
+        <button type="submit" className={css.loginButton}>
           Log in
         </button>
         <p>
           Don't have an account? Sign up
-          <a href="/register" className={css.link}>
+          <a href="/goit-react-hw-08-phonebook/register" className={css.link}>
             {' '}
             here
           </a>

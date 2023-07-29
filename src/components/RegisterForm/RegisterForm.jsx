@@ -45,12 +45,12 @@ export const RegisterForm = () => {
             className={css.inputEl}
           />
         </label>
-        <button type="submit" className={css.button}>
+        <button type="submit" className={css.registerButton}>
           Sign up
         </button>
         <p>
           Do you have an account? Log in
-          <a href="/login" className={css.link}>
+          <a href="/goit-react-hw-08-phonebook/login" className={css.link}>
             {' '}
             here
           </a>

@@ -18,9 +18,14 @@ export const ContactForm = () => {
       number,
     };
 
-    if (contacts.includes(name)) {
+    const contactExists = contacts.some(
+      existingContact =>
+        existingContact.name === name && existingContact.number === number
+    );
+
+    if (contactExists) {
       form.reset();
-      return alert(`${name} is alredy in contacts`);
+      return alert(`${name} is already in contacts`);
     }
 
     dispatch(addContact(contact));
