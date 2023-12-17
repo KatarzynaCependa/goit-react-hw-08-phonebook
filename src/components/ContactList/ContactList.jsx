@@ -3,6 +3,9 @@ import css from 'components/ContactList/ContactList.module.css';
 import { deleteContact } from 'redux/contacts/operations';
 import { selectFilter } from 'redux/contacts/filtersSlice';
 
+import IconButton from '@mui/material/IconButton';
+import DeleteIcon from '@mui/icons-material/Delete';
+
 export const ContactList = () => {
   const contacts = useSelector(state => state.contacts.contacts);
   const filter = useSelector(selectFilter);
@@ -27,12 +30,14 @@ export const ContactList = () => {
       {filteredContacts.map(contact => (
         <li key={contact.id} className={css.listEl}>
           {contact.name}: {contact.number}
-          <button
+          <IconButton
+            aria-label="delete"
+            size="small"
             onClick={() => handleDelete(contact.id)}
             className={css.delBtn}
           >
-            X
-          </button>
+            <DeleteIcon fontSize="inherit" />
+          </IconButton>
         </li>
       ))}
     </ul>
