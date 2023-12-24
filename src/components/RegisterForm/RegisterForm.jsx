@@ -62,6 +62,7 @@
 
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
+import css from 'components/RegisterForm/RegisterForm.module.css';
 
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
@@ -84,15 +85,16 @@ function Copyright(props) {
       align="center"
       {...props}
     >
-      {'Copyright © '}
+      {'© '}
+      {new Date().getFullYear()}
+      {' Developed by '}
       <Link
         color="inherit"
         href="https://www.linkedin.com/in/katarzyna-cependa/"
+        className={css.linkEl}
       >
         Kasia Cependa
       </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
     </Typography>
   );
 }

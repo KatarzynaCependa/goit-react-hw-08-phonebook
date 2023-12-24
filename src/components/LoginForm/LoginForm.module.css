@@ -1,4 +1,12 @@
-.formWrapper {
+.linkEl {
+  text-decoration: none;
+}
+
+.linkEl:hover {
+  color: #1565c0;
+}
+
+/* .formWrapper {
   margin-top: 50px;
 }
 
@@ -97,4 +105,4 @@
 
 .link:hover {
   color: #66b032;
-}
+} */

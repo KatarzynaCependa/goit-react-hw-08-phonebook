@@ -2,16 +2,16 @@
   display: flex;
   gap: 20px;
   align-items: center;
-  margin-left: 60px;
 }
 
 .navLink {
-  color: #375f1b;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 1.3rem;
+  line-height: 1.334;
+  color: inherit;
 }
 
 .navLink:hover {
-  color: #66b032;
+  color: #1565c0;
 }

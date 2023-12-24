@@ -1,20 +1,40 @@
 import React from 'react';
 import css from './Home.module.css';
 
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+
+function Copyright(props) {
+  return (
+    <Typography
+      variant="body2"
+      color="text.secondary"
+      align="center"
+      {...props}
+    >
+      {'© '}
+      {new Date().getFullYear()}
+      {' Developed by '}
+      <Link
+        color="inherit"
+        href="https://www.linkedin.com/in/katarzyna-cependa/"
+        className={css.linkEl}
+      >
+        Kasia Cependa
+      </Link>{' '}
+    </Typography>
+  );
+}
+
 const Home = () => (
   <div className={css.headerWrapper}>
-    <p className={css.header}>Welcome to</p>
-    <div className={css.waviy}>
-      <span style={{ '--i': 1 }}>P</span>
-      <span style={{ '--i': 2 }}>h</span>
-      <span style={{ '--i': 3 }}>o</span>
-      <span style={{ '--i': 4 }}>n</span>
-      <span style={{ '--i': 5 }}>e</span>
-      <span style={{ '--i': 6 }}>b</span>
-      <span style={{ '--i': 7 }}>o</span>
-      <span style={{ '--i': 8 }}>o</span>
-      <span style={{ '--i': 9 }}>k</span>
-    </div>
+    <p className={css.header}>Welcome to Phonebook</p>
+    <img
+      alt="people"
+      src={process.env.PUBLIC_URL + '/people.jpg'}
+      className={css.headerImage}
+    />
+    <Copyright sx={{ mt: 5 }} />
   </div>
 );
 

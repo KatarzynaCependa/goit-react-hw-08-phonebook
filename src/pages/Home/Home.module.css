@@ -1,11 +1,24 @@
+.linkEl {
+  text-decoration: none;
+}
+
+.linkEl:hover {
+  color: #1565c0;
+}
+
 .headerWrapper {
   max-width: fit-content;
   margin: 200px auto;
 }
 
+.headerImage {
+  width: 320px;
+}
+
 .header {
-  font-size: 60px;
-  color: #375f1b;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.334;
   text-align: center;
 }
 
