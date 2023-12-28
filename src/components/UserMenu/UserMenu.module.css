@@ -8,3 +8,11 @@
   color: #1565c0;
   cursor: pointer;
 }
+
+.desktopOnly {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline;
+  }
+}

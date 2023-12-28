@@ -13,7 +13,7 @@ export const UserMenu = () => {
 
   return (
     <div className={css.wrapper}>
-      <p>Welcome, {user?.name}</p>
+      <p className={css.desktopOnly}>Welcome, {user?.name}</p>
       <div onClick={handleLogout}>
         <LogoutIcon className={css.logoutIcon} />
       </div>

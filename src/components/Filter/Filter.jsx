@@ -17,7 +17,7 @@ export const Filter = () => {
     <label className={css.filterLabel}>
       Find your contacts by name
       <TextField
-        margin="normal"
+        margin="dense"
         fullWidth
         label="Search"
         name="search"

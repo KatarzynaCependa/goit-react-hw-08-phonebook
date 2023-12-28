@@ -1,42 +1,35 @@
 .linkEl {
   text-decoration: none;
-}
 
-.linkEl:hover {
-  color: #1565c0;
+  &:hover {
+    color: #1565c0;
+  }
 }
 
 .headerWrapper {
-  max-width: fit-content;
-  margin: 200px auto;
-}
-
-.headerImage {
-  width: 320px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .header {
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.334;
   text-align: center;
 }
 
-.waviy {
-  position: relative;
-  margin-top: 15px;
+.subtitle {
+  font-size: 0.8rem;
 }
-.waviy span {
-  position: relative;
-  display: inline-block;
-  font-size: 100px;
-  color: #375f1b;
-  animation: flip 2s infinite;
-  animation-delay: calc(0.2s * var(--i));
-}
-@keyframes flip {
-  0%,
-  80% {
-    transform: rotateY(360deg);
+
+.headerImage {
+  width: 100%;
+  max-width: 470px;
+
+  @media (min-width: 768px) {
+    max-width: 560px;
   }
 }

@@ -9,17 +9,17 @@ export const Navigation = () => {
   const { isLoggedIn } = useAuth();
 
   return (
-    <nav className={css.navEl}>
-      <NavLink to="/" className={css.navLink}>
+    <div className={css.navWrapper}>
+      <NavLink to="/" className={css.navEl}>
         <HomeIcon />
-        Home
+        <span className={css.desktopOnly}>Home</span>
       </NavLink>
       {isLoggedIn && (
-        <NavLink className={css.navLink} to="/contacts">
+        <NavLink className={css.navEl} to="/contacts">
           <ImportContactsIcon />
-          Contacts
+          <span className={css.desktopOnly}>Contacts</span>
         </NavLink>
       )}
-    </nav>
+    </div>
   );
 };

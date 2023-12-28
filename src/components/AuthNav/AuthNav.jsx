@@ -9,11 +9,11 @@ export const AuthNav = () => {
     <div className={css.navWrapper}>
       <NavLink to="/register" className={css.navEl}>
         <AppRegistrationIcon />
-        Register
+        <span className={css.desktopOnly}>Register</span>
       </NavLink>
       <NavLink to="/login" className={css.navEl}>
         <LoginIcon />
-        Login
+        <span className={css.desktopOnly}>Log in</span>
       </NavLink>
     </div>
   );

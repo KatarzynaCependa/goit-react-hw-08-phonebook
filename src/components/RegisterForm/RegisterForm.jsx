@@ -1,65 +1,3 @@
-// import { useDispatch } from 'react-redux';
-// import { register } from 'redux/auth/operations';
-// import css from 'components/RegisterForm/RegisterForm.module.css';
-
-// export const RegisterForm = () => {
-//   const dispatch = useDispatch();
-
-//   const handleSubmit = e => {
-//     e.preventDefault();
-//     const form = e.target;
-//     const registerElements = {
-//       name: form.elements.username.value,
-//       email: form.elements.email.value,
-//       password: form.elements.password.value,
-//     };
-
-//     dispatch(register(registerElements));
-//     form.reset();
-//   };
-
-//   return (
-//     <div className={css.formWrapper}>
-//       <form className={css.formEl} onSubmit={handleSubmit}>
-//         <label>
-//           <input
-//             type="text"
-//             name="username"
-//             placeholder="username"
-//             className={css.inputEl}
-//           />
-//         </label>
-//         <label>
-//           <input
-//             type="email"
-//             name="email"
-//             placeholder="email"
-//             className={css.inputEl}
-//           />
-//         </label>
-//         <label>
-//           <input
-//             type="password"
-//             name="password"
-//             placeholder="password"
-//             className={css.inputEl}
-//           />
-//         </label>
-//         <button type="submit" className={css.registerButton}>
-//           Sign up
-//         </button>
-//         <p>
-//           Do you have an account? Log in
-//           <a href="/goit-react-hw-08-phonebook/login" className={css.link}>
-//             {' '}
-//             here
-//           </a>
-//         </p>
-//       </form>
-//     </div>
-//   );
-// };
-
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
 import css from 'components/RegisterForm/RegisterForm.module.css';
@@ -134,7 +72,7 @@ export const RegisterForm = () => {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign up
+            Register
           </Typography>
           <Box
             component="form"
@@ -183,12 +121,12 @@ export const RegisterForm = () => {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign Up
+              Register
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <Link href="/goit-react-hw-08-phonebook/login" variant="body2">
-                  Already have an account? Sign in
+                  Already have an account? Log in
                 </Link>
               </Grid>
             </Grid>

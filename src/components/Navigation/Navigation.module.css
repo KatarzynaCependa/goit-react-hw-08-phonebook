@@ -1,17 +1,29 @@
-.navEl {
+.navWrapper {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-.navLink {
-  font-weight: 500;
+.navEl {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.334;
   color: inherit;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+
+  &:hover {
+    color: #1565c0;
+  }
 }
 
-.navLink:hover {
-  color: #1565c0;
+.desktopOnly {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline;
+    margin-top: 1px;
+  }
 }

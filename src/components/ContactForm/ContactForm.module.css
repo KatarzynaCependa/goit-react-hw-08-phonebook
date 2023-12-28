@@ -2,49 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 500px;
   padding: 20px;
   border: 1px solid #ccc;
   margin-top: 40px;
 }
 
-.contactFormLabel {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .button {
-  width: 80px;
-  height: 25px;
-  font-size: 12px;
-  line-height: 1;
-  color: #98e462;
-  background: #1b3409;
-  transition: 0.35s;
-  cursor: pointer;
-  border-radius: 10px;
-  border: none;
-  margin: auto;
-  justify-content: center;
-  padding: 5px 7px;
-}
-button:hover,
-button:focus {
-  box-shadow: inset 0 0 0 2em #98e462;
-  border: none;
-  color: #1b3409;
-}
-
-.inputEl {
-  padding: 10px 40px 10px 15px;
-  border: 3px solid #ccc;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  outline: none;
-}
-
-.inputEl:focus {
-  border: 3px solid #618685;
+  margin: 40px auto 0px auto;
 }
