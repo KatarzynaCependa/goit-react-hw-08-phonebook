@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/656.aa9a1282.chunk.css","mappings":"AAAA,4BACE,oBAAqB,CAErB,QACE,aACF,CACF","sources":["components/RegisterForm/RegisterForm.module.css"],"sourcesContent":[".linkEl {\n  text-decoration: none;\n\n  &:hover {\n    color: #1565c0;\n  }\n}\n"],"names":[],"sourceRoot":""}
