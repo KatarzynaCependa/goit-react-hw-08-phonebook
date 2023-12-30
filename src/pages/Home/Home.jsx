@@ -3,7 +3,6 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import css from './Home.module.css';
 
-import { fetchContacts } from 'redux/contacts/operations';
 import { logIn } from 'redux/auth/operations';
 
 import Typography from '@mui/material/Typography';
@@ -43,7 +42,6 @@ const Home = () => {
     };
 
     dispatch(logIn(loginElements));
-    dispatch(fetchContacts());
     navigate('/contacts');
   };
 
@@ -62,7 +60,6 @@ const Home = () => {
           style={{ margin: '13px auto 0px auto' }}
           size="small"
           variant="contained"
-          // type="submit"
           onClick={handleTryItOut}
         >
           Try it now as a Guest!

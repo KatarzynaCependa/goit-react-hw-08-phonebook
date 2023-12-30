@@ -59,11 +59,11 @@ export const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className={css.form}>
-      <FormControl variant="standard">
+      <FormControl variant="standard" fullWidth>
         <InputLabel htmlFor="component-simple">Name</InputLabel>
         <Input id="component-simple" name="name" required />
       </FormControl>
-      <FormControl variant="standard">
+      <FormControl variant="standard" fullWidth>
         <InputLabel htmlFor="component-simple">Number</InputLabel>
         <Input id="component-simple" name="number" required />
       </FormControl>
