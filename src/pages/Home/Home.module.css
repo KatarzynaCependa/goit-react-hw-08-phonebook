@@ -1,5 +1,6 @@
 .linkEl {
   text-decoration: none;
+  color: inherit;
 
   &:hover {
     color: #1565c0;
@@ -23,6 +24,7 @@
 
 .subtitle {
   font-size: 0.8rem;
+  margin-top: 10px;
 }
 
 .headerImage {

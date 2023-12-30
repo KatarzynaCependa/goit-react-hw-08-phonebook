@@ -1,6 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import css from './Home.module.css';
+
+import { fetchContacts } from 'redux/contacts/operations';
+import { logIn } from 'redux/auth/operations';
 
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
@@ -28,27 +32,50 @@ function Copyright(props) {
   );
 }
 
-const Home = () => (
-  <div className={css.headerWrapper}>
-    <p className={css.header}>Welcome to Phonebook!</p>
-    <p className={css.subtitle}>Create your own personal book of contacts.</p>
-    <NavLink to="/register">
-      <Button
-        style={{ margin: '13px auto 0px auto' }}
-        size="small"
-        variant="contained"
-        type="submit"
-      >
-        Try it now!
-      </Button>
-    </NavLink>
-    <img
-      alt="people"
-      src={process.env.PUBLIC_URL + '/people.jpg'}
-      className={css.headerImage}
-    />
-    <Copyright />
-  </div>
-);
+const Home = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const handleTryItOut = () => {
+    const loginElements = {
+      email: 'liwifax598@wikfee.com',
+      password: 'Guestaccount123',
+    };
+
+    dispatch(logIn(loginElements));
+    dispatch(fetchContacts());
+    navigate('/contacts');
+  };
+
+  return (
+    <div className={css.headerWrapper}>
+      <p className={css.header}>Welcome to Phonebook!</p>
+      <p className={css.subtitle}>
+        <NavLink to="/register" className={css.linkEl}>
+          Register
+        </NavLink>{' '}
+        and create your own personal book of contacts
+        <span style={{ display: 'block' }}>or</span>
+      </p>
+      <NavLink to="/contacts">
+        <Button
+          style={{ margin: '13px auto 0px auto' }}
+          size="small"
+          variant="contained"
+          // type="submit"
+          onClick={handleTryItOut}
+        >
+          Try it now as a Guest!
+        </Button>
+      </NavLink>
+      <img
+        alt="people"
+        src={process.env.PUBLIC_URL + '/people.jpg'}
+        className={css.headerImage}
+      />
+      <Copyright />
+    </div>
+  );
+};
 
 export default Home;
